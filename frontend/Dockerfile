@@ -6,7 +6,7 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 
 RUN --mount=type=cache,target=/root/.npm \
-    npm ci
+    npm ci --prefer-offline --no-audit --no-fund
 
 COPY . .
 
