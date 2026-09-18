@@ -61,13 +61,11 @@
     "@vitejs/plugin-react-swc": "^4.3.1",
     "autoprefixer": "^10.4.14",
     "daisyui": "^4.12.23",
-    "file-loader": "^6.2.0",
     "postcss": "^8.4.27",
     "prettier": "^3.0.0",
     "prettier-plugin-tailwindcss": "^0.4.1",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.7.3",
-    "vite": "^4.4.7",
-    "webpack": "^5.88.2"
+    "vite": "^4.4.7"
   }
 }
