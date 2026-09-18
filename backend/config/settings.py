@@ -26,7 +26,7 @@ def _normalize_public_base_url(raw_value, fallback):
     value = (raw_value or fallback).strip().rstrip('/')
     parsed = urlparse(value)
     if not parsed.scheme or not parsed.hostname:
-        raise ValueError('PUBLIC_BASE_URL must include scheme and hostname, for example https://192.168.2.72')
+        raise ValueError('PUBLIC_BASE_URL must include scheme and hostname, for example https://192.168.101.6')
     return value
 
 

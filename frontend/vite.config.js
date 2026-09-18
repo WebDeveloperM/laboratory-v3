@@ -34,7 +34,7 @@ const readSharedEnv = () => {
 };
 
 const sharedEnv = readSharedEnv();
-const publicBaseUrl = String(sharedEnv.PUBLIC_BASE_URL || 'https://192.168.2.72').trim().replace(/\/+$/, '');
+const publicBaseUrl = String(sharedEnv.PUBLIC_BASE_URL || 'https://192.168.101.6').trim().replace(/\/+$/, '');
 const backendPort = String(sharedEnv.BACKEND_PORT || '8020').trim();
 const frontendPort = String(sharedEnv.FRONTEND_PORT || '6020').trim();
 const backendTarget = String(
