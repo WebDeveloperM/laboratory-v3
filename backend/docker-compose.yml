@@ -29,7 +29,7 @@ services:
     image: laboratory_backend:latest
     container_name: laboratory_backend_https
     restart: unless-stopped
-    command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8005"
+    command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8020"
     volumes:
       - .:/app
     env_file:

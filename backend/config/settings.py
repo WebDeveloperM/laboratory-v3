@@ -46,7 +46,7 @@ PUBLIC_BASE_URL = _normalize_public_base_url(
     os.environ.get('PUBLIC_BASE_URL', ''),
     'https://192.168.2.72',
 )
-BACKEND_PORT = int(os.environ.get('BACKEND_PORT', '8050'))
+BACKEND_PORT = int(os.environ.get('BACKEND_PORT', '8020'))
 FRONTEND_PORT = int(os.environ.get('FRONTEND_PORT', '6060'))
 EMPLOYEE_SERVICE_PORT = int(os.environ.get('EMPLOYEE_SERVICE_PORT', '5000'))
 PUBLIC_HOST = urlparse(PUBLIC_BASE_URL).hostname
@@ -214,7 +214,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:5175',
-    'http://127.0.0.1:8005',
+    'http://127.0.0.1:8020',
     f'http://{PUBLIC_HOST}:{FRONTEND_PORT}',
 )
 
@@ -222,8 +222,8 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:5175',
     'https://localhost:5175',
     *_with_http_and_https(FRONTEND_PUBLIC_URL),
-    "http://127.0.0.1:8005",
-    "https://127.0.0.1:8005",
+    "http://127.0.0.1:8020",
+    "https://127.0.0.1:8020",
     *_with_http_and_https(BACKEND_PUBLIC_URL),
     # 'https://bnpz.uz',
 ]
@@ -242,8 +242,8 @@ CSRF_TRUSTED_ORIGINS = [
     'https://localhost:5175',
     'https://127.0.0.1:5175',
     FRONTEND_PUBLIC_URL,
-    'https://localhost:8005',
-    'https://127.0.0.1:8005',
+    'https://localhost:8020',
+    'https://127.0.0.1:8020',
     BACKEND_PUBLIC_URL,
 ]
 

@@ -30,6 +30,6 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 
 COPY . .
 
-EXPOSE 8005
+EXPOSE 8020
 
-CMD ["sh", "-c", "python manage.py migrate && python manage.py runserver 0.0.0.0:8005"]
+CMD ["sh", "-c", "python manage.py migrate && python manage.py runserver 0.0.0.0:8020"]

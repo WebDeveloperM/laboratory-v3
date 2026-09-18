@@ -69,8 +69,8 @@ export const resolveEmployeeImageUrl = (value?: string | null) => {
 
 	return raw
 }
-//  export const BASE_URL = "http://127.0.0.1:8005/api/v1"
-//  export const BASE_IMAGE_URL = "http://127.0.0.1:8005"
+//  export const BASE_URL = "http://127.0.0.1:8020/api/v1"
+//  export const BASE_IMAGE_URL = "http://127.0.0.1:8020"
 //export const BASE_URL = "https://inv.bnpz.uz/api/v1"
 //export const BASE_IMAGE_URL = "https://inv.bnpz.uz"
 
