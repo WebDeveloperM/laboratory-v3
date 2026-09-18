@@ -38,7 +38,7 @@ const publicBaseUrl = String(sharedEnv.PUBLIC_BASE_URL || 'https://192.168.2.72'
 const backendPort = String(sharedEnv.BACKEND_PORT || '8020').trim();
 const frontendPort = String(sharedEnv.FRONTEND_PORT || '6020').trim();
 const backendTarget = String(
-  sharedEnv.BACKEND_INTERNAL_URL || `http://backend:8020`
+  sharedEnv.BACKEND_INTERNAL_URL || `https://192.168.101.6:8020`
 ).trim().replace(/\/+$/, '');
 const frontendPublicUrl = `${publicBaseUrl}:${frontendPort}`;
 
